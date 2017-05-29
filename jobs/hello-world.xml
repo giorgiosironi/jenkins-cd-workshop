@@ -9,7 +9,7 @@
   </properties>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.32">
     <script>node {
-    echo &quot;Hello, world!&quot;
+    echo &quot;Hello, world! This is an hardcoded pipeline configured into Jenkins&quot;
 }</script>
     <sandbox>true</sandbox>
   </definition>
