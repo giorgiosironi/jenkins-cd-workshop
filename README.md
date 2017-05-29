@@ -6,3 +6,7 @@
 ```
 ./jenkins-cli.sh create-job hello-world < jobs/hello-world.xml
 ```
+
+## Github
+
+User: https://github.com/jenkins-cd-workshop
