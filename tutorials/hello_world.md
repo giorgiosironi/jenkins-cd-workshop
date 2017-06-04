@@ -5,7 +5,7 @@ Run
 ./jenkins-cli.sh create-job hello-world < jobs/hello-world.xml
 ```
 
-This will create a new `hello-world` pipeline, visible at (http://localhost:8080).
+This will create a new `hello-world` pipeline, visible at http://localhost:8080
 
 The contents of this pipeline are specified in the XML file, but what we care about is just the Groovy part:
 ```
@@ -20,7 +20,7 @@ Executors pick up pipelines to perform all their steps; in this case with `node 
 
 The only step in this pipeline is an `echo` step outputting a constant string.
 
-For practical reasons we aren't setting up Github hooks, so you will have to run these builds manually. Go at (http://localhost:8080/job/hello-world/) and click `Build Now`.
+For practical reasons we aren't setting up Github hooks, so you will have to run these builds manually. Go at http://localhost:8080/job/hello-world/ and click `Build Now`.
 
 By clicking on the small bulbs in `Build History` you can go directly to the build's output. You should see
 

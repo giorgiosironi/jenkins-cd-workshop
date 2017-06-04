@@ -1,8 +1,8 @@
 ## Tutorials
 
-(Setup)[tutorial/setup.md]
-(Hello world)[tutorial/hello_world.md]
-(Hello world)[tutorial/hello_world_repository.md]
+- [Setup](tutorials/setup.md)
+- [Hello world](tutorials/hello_world.md)
+- [Hello world, repository version](tutorials/hello_world_repository.md)
 
 ## Commands
 
@@ -21,6 +21,6 @@
 
 ## Github references
 
-User: https://github.com/jenkins-cd-workshop
-Repository of common steps: https://github.com/jenkins-cd-workshop-steps
+- User: https://github.com/jenkins-cd-workshop
+- Repository of common steps: https://github.com/jenkins-cd-workshop-steps
 

@@ -5,7 +5,7 @@ Run
 ./jenkins-cli.sh create-job hello-world-repository < jobs/hello-world-repository.xml
 ```
 
-Run the new pipeline at (http://localhost:8080/job/hello-world-repository/). You should see:
+Run the new pipeline at http://localhost:8080/job/hello-world-repository/. You should see:
 
 ```
 Started by user anonymous
@@ -30,4 +30,4 @@ The XML file we use is saved in its jenkins_home folder. It contains the only re
     ...
 ```
 
-You can see the Groovy build definition at (https://github.com/jenkins-cd-workshop/hello-world/blob/master/Jenkinsfile). It is equivalent to the (docs/hello-world)[previous build we created], but being stored in the project itself it's much easier to maintain and to atomically update when the code changes.
+You can see the Groovy build definition in what is called the [https://github.com/jenkins-cd-workshop/hello-world/blob/master/Jenkinsfile](Jenkinsfile). It is equivalent to the [hello-world](previous build we created), but being stored in the project itself it's much easier to maintain and to atomically update when the code changes.

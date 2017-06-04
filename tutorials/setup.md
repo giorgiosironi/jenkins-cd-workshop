@@ -10,7 +10,7 @@ There is nothing stopping you from just running a Jenkins .jar file instead, but
 
 Run `./jenkins.sh`. This should pull down a docker image, and start it with the necessary. You can stop the container with Ctrl+C, but it should be left running. It will persist its state so don't be afraid to stop and restart.
 
-Check that Jenkins is running by loading (http://localhost:8080) in your browser.
+Check that Jenkins is running by loading http://localhost:8080 in your browser.
 
 Check that the jenkins-cli is correctly set up so that you will be able to interact with Jenkins from the terminal. Run `./jenkins-cli.sh`, you should see an output similar to:
 
