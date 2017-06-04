@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+sudo chmod 777 jenkins_home/
 sudo docker run \
 	-p 8080:8080 \
     -p 16022:16022 \
