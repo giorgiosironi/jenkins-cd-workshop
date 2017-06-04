@@ -1,4 +1,5 @@
 #!/bin/bash
 set -e
 
-sudo rm -rf jenkins_home/* jenkins_home/.java jenkins_home/.groovy
+rm -rf jenkins_home/*
+git clean -fdX jenkins_home/
