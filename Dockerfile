@@ -6,7 +6,15 @@ RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
 COPY config/*.xml /usr/share/jenkins/ref/
 # custom initialization code, if needed
 COPY custom.groovy /usr/share/jenkins/ref/init.groovy.d/custom.groovy
-# install this:
-# https://github.com/github/hub/releases/download/v2.2.9/hub-linux-amd64-2.2.9.tgz
-RUN git config --global user.email "jenkins-cd-workshop@giorgiosironi.com"
-RUN git config --global user.name "Jenkins C. D. Workshop"
+# git configuration to be able to create new commits in builds
+COPY .gitconfig /usr/share/jenkins/ref/
+# avoid "Host Key Verification Failed" when using git+ssh
+COPY known_hosts /usr/share/jenkins/ref/.ssh/known_hosts
+# installing hub to create pull requests from builds
+USER root
+RUN cd /tmp && \
+    wget https://github.com/github/hub/releases/download/v2.2.9/hub-linux-amd64-2.2.9.tgz && \
+    cd /usr/local && \
+    tar xvzf /tmp/hub-linux-amd64-2.2.9.tgz && \
+    ln -s /usr/local/hub-linux-amd64-2.2.9/bin/hub /usr/local/bin/hub
+USER jenkins
