@@ -3,6 +3,14 @@
 - [Setup](tutorials/setup.md)
 - [Hello world](tutorials/hello_world.md)
 - [Hello world, repository version](tutorials/hello_world_repository.md)
+- [Multiple stages](tutorials/multiple_stages.md)
+- [Extracting common steps](tutorials/with_common_steps.md)
+- [Building a whole Github organization](tutorials/whole_organization.md)
+- [Build wrappers](tutorials/build_wrappers.md)
+- [Locks](tutorials/locks.md)
+- [Parallelism](tutorials/parallel.md)
+- [Starting and stopping an external resource](tutorials/precious_resource.md)
+- [Creating pull requests](tutorials/new_pull_request.md)
 
 ## Commands
 
