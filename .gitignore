@@ -1,3 +1,4 @@
 /jenkins_home/*
 /jenkins-cli.jar
 /secrets/*
+/id_rsa
