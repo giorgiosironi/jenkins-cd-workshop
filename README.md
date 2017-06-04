@@ -1,23 +1,26 @@
-## Requirements
+## Tutorials
 
-Docker needs to be installed upon a Linux machine (virtual or physical), to be able to run the image `giorgiosironi/jenkins-cd-workshop`.
-
-`./load-credentials.sh` needs to be run to provide Jenkins with credentials to access Github, mostly in a read only way but also for writing commit statuses or open pull requests in advanced scenarios. An SSH private key and a Github token for `jenkins-cd-workshop` should be provided by the workshop's speaker.
-
-- other repository, steps one
+(Setup)[tutorial/setup.md]
+(Hello world)[tutorial/hello_world.md]
+(Hello world)[tutorial/hello_world_repository.md]
 
 ## Commands
 
 `jenkins.sh` will start a preconfigured container with a LTS Jenkins version.
 
-`jenkins-cli.sh` is the jenkins-cli:
+`build.sh` will rebuild the local `giorgiosironi/jenkins-cd-workshop` image from the Dockerfile.
+
+`jenkins-cli.sh` is the jenkins-cli, which in this context is primarily used to create prebuilt jobs:
 ```
 ./jenkins-cli.sh create-job hello-world < jobs/hello-world.xml
 ```
 
+`clear.sh` clears `jenkins_home/`, a mounted volume where the container stores all state relative to the Jenkins instance (such as additional plugins that have been installed, or simply the build results).
+
+`load-credentials.sh` loads a SSH key and a Github token into Jenkins. Both should be configured for the `jenkins-cd-workshop` Github user; they should be provided by the speaker.
+
 ## Github references
 
 User: https://github.com/jenkins-cd-workshop
-
-
+Repository of common steps: https://github.com/jenkins-cd-workshop-steps
 
