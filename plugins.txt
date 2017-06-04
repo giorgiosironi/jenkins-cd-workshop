@@ -29,6 +29,7 @@ icon-shim:2.0.3
 jquery-detached:1.2.1
 junit:1.20
 ldap:1.15
+lockable-resources:2.0
 mailer:1.20
 mapdb-api:1.0.9.0
 matrix-auth:1.6
