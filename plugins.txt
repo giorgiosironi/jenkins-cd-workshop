@@ -23,6 +23,7 @@ github-api:1.85
 github-branch-source:2.0.5
 github-organization-folder:1.6
 gradle:1.26
+greenballs:1.15
 handlebars:1.1.1
 icon-shim:2.0.3
 jquery-detached:1.2.1
