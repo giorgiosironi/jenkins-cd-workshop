@@ -1,5 +1,7 @@
 # Hello world, repository version
 
+The more metadata you store into Jenkins (or any other CI system), the more difficult will it be to evolve. Therefore once we are able to run a Hello World pipeline we should immediately strive to store its definition inside the source code repository of our project, which will make it versionable and capable of being branched, analyzed, reviewed...
+
 Run
 ```
 ./jenkins-cli.sh create-job hello-world-repository < jobs/hello-world-repository.xml
@@ -30,4 +32,4 @@ The XML file we use is saved in its jenkins_home folder. It contains the only re
     ...
 ```
 
-You can see the Groovy build definition in what is called the [https://github.com/jenkins-cd-workshop/hello-world/blob/master/Jenkinsfile](Jenkinsfile). It is equivalent to the [hello-world](previous build we created), but being stored in the project itself it's much easier to maintain and to atomically update when the code changes.
+You can see the Groovy build definition in what is called the [https://github.com/jenkins-cd-workshop/hello-world/blob/master/Jenkinsfile](Jenkinsfile). It is equivalent to the [hello-world](previous job we created), but being stored in the project itself it's much easier to maintain and to atomically update when the code changes.
