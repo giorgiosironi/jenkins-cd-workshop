@@ -11,6 +11,7 @@
 - [Parallelism](tutorials/parallel.md)
 - [Starting and stopping an external resource](tutorials/precious_resource.md)
 - [Creating pull requests](tutorials/new_pull_request.md)
+- [Downstream](tutorials/downstream.md)
 
 ## Commands
 
