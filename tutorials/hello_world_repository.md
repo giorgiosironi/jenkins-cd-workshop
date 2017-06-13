@@ -32,4 +32,4 @@ The XML file we use is saved in its jenkins_home folder. It contains the only re
     ...
 ```
 
-You can see the Groovy build definition in what is called the [https://github.com/jenkins-cd-workshop/hello-world/blob/master/Jenkinsfile](Jenkinsfile). It is equivalent to the [hello-world](previous job we created), but being stored in the project itself it's much easier to maintain and to atomically update when the code changes.
+You can see the Groovy build definition in what is called the [https://github.com/jenkins-cd-workshop/hello-world/blob/master/Jenkinsfile](Jenkinsfile). It is equivalent to the [hello_world](previous job we created), but being stored in the project itself it's much easier to maintain and to atomically update when the code changes.
