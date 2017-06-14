@@ -33,3 +33,5 @@ The XML file we use is saved in its `jenkins_home` folder. It contains the only 
 ```
 
 You can see the Groovy build definition in what is called the [Jenkinsfile](https://github.com/jenkins-cd-workshop/hello-world/blob/master/Jenkinsfile). It is equivalent to the [previous job we created](hello_world.md), but being stored in the project itself it's much easier to maintain and to atomically update when the code changes.
+
+N.B. Normally the pipeline is configured to trigger a new build at every new commit on the branch the Jenkinsfile comes from. The commit is delivered through a Github hook, which we can't deliver to your localhost, so we will trigger builds manually for maximum control.

@@ -13,7 +13,7 @@ This job is not a pipeline, but a special kind of `folder` that will contain oth
 
 This standard plugin periodically scans the Github API for an organization or a user profile, and creates a list of generated jobs organized first in projects and then in pull requests. The plugin itself can also be configured to build branches, including master.
 
-Scans and builds are usually triggered by a [https://github.com/jenkinsci/github-organization-folder-plugin#hook-configuration](Github organization hook), but here we will trigger them manually to have complete control (and also Github hooks cannot reach `localhost`).
+Scans and builds are usually triggered by a [https://github.com/jenkinsci/github-organization-folder-plugin#hook-configuration](Github organization hook), but as in [hello_world_repository.md](the first repository example), here we will trigger them manually to have complete control.
 
 At http://localhost:8080/job/whole-organization/ you should at least see the `hello-world` project appear (it's the only one with an open pull request).
 
