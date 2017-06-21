@@ -1,6 +1,6 @@
 # Building all the pull requests of a Github organization
 
-Or at least the ones containing a Jenkinsfile. Remember when we [loaded credentials](setup) into Jenkins? Now they will become necessary.
+Or at least the ones containing a Jenkinsfile. Remember when we [loaded credentials](setup.md) into Jenkins? Now they will become necessary.
 
 Run
 ```
