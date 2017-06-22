@@ -32,6 +32,6 @@ Now go back to `jenkins-cd-workshop` and run:
 
 Run the new pipeline at http://localhost:8080/job/with-common-steps/.
 
-[https://github.com/jenkins-cd-workshop/with-common-steps/blob/master/Jenkinsfile](The pipeline calls a step) that is [https://github.com/jenkins-cd-workshop/steps/blob/master/vars/gitDifferences.groovy](defined into the library).
+[The pipeline calls a step](https://github.com/jenkins-cd-workshop/with-common-steps/blob/master/Jenkinsfile) that is [defined into the library](https://github.com/jenkins-cd-workshop/steps/blob/master/vars/gitDifferences.groovy).
 
 Every step is a different `stepName.groovy` file defining a `call()` function. It is this function that can be called with `stepName()` from the pipeline, passing arguments and assigning its return value.
