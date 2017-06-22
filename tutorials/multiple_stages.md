@@ -39,6 +39,6 @@ The output is separated into sections labelled by stage as an heading:
 Finished: SUCCESS
 ```
 
-[https://github.com/jenkins-cd-workshop/multiple-stages/blob/master/Jenkinsfile](The pipeline defines the 3 stages) you have just seen. Each stage has two arguments: a string (that is, its name) and a closure containing Groovy code to execute.
+[The pipeline defines the 3 stages](https://github.com/jenkins-cd-workshop/multiple-stages/blob/master/Jenkinsfile) you have just seen. Each stage has two arguments: a string (that is, its name) and a closure containing Groovy code to execute.
 
 The first stage checks out a working copy of the Git repository in the current directory of the build, called a `workspace` in Jenkins. The second one runs a shell command, the most generic construct that can integrate any external deploy tool or testing framework (in this case it's just Python's `unittest`). The third stage could be, for example, a deploy; each stage will only be executed if the previous ones pass.
