@@ -1,0 +1,3 @@
+Check out the https://github.com/giorgiosironi/jenkins-cd-workshop/ repository and follow its setup at https://github.com/giorgiosironi/jenkins-cd-workshop/blob/master/tutorials/setup.md
+
+You should be able to pull down the Docker image and complete the `Start` subsection. The `Credentials` subsection is only necessary for advanced builds and will be executed during the workshop.
