@@ -1,3 +1,5 @@
 Check out the https://github.com/giorgiosironi/jenkins-cd-workshop/ repository and follow its setup at https://github.com/giorgiosironi/jenkins-cd-workshop/blob/master/tutorials/setup.md
 
 You should be able to pull down the Docker image and complete the `Start` subsection. The `Credentials` subsection is only necessary for advanced builds and will be executed during the workshop.
+
+Having a working Docker image and Jenkins running on localhost:8080 is important to avoid having to download everything during the workshop and waste time troubleshooting the setup phase.
