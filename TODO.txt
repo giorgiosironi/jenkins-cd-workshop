@@ -1,0 +1,6 @@
+- slides with screenshots explaining theoretical concepts
+-- show a demo
+-- assume zero knowledge
+-- go around the UI for people that are unfamiliar
+- going around, seeing people having hello world working
+- few tweets for promotion
