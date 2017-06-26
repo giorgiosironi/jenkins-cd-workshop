@@ -26,7 +26,7 @@ The second interesting thing is that some output is colored:
 20:50:13 Hello # <- this should be red
 ```
 
-Looking at [https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.build-wrappers](the pipeline definition), we see these build wrappers:
+Looking at [the pipeline definition](https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.build-wrappers), we see these build wrappers:
 ```
 timestamps {
 }
