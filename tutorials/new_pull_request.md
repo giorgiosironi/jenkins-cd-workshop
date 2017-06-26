@@ -9,14 +9,14 @@ Run
 ./jenkins-cli.sh create-job new-pull-request < jobs/new-pull-request.xml
 ```
 
-[https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.new-pull-request](The pipeline definition has 4 phases):
+[The pipeline definition has 4 phases](https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.new-pull-request):
 
 1. Checkout the original repository 
 1. Run a process that will generate a difference in the version-controlled files
 1. Generate a commit as descriptive as possible (not really)
 1. Push and open a pull request
 
-We don't need to test our changes, because we can use the [whole_organization.md](organization folder) to build all pull requests anyway. The success of this build is whether the process succeeds and the changes can be pushed; we may want to do additional work on the pull request before merging, each time re-running only the build of the pull request and not this one, which generated its first commit.
+We don't need to test our changes, because we can use the [organization folder](whole_organization.md) to build all pull requests anyway. The success of this build is whether the process succeeds and the changes can be pushed; we may want to do additional work on the pull request before merging, each time re-running only the build of the pull request and not this one, which generated its first commit.
 
 Trigger a new build at http://localhost:8080/job/new-pull-request/ and you should see (if the output is green) a new PR at https://github.com/jenkins-cd-workshop/advanced-pipelines/pulls
 

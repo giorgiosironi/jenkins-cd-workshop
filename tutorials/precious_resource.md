@@ -8,9 +8,9 @@ Run
 ./jenkins-cli.sh create-job precious-resource-stop < jobs/precious-resource-stop.xml
 ```
 
-The [https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.precious-resource-use](use pipeline) simulates a very powerful virtual machine that is [locks.md](locked) and started to be used inside a build. After the stage using it has finished, the corresponding resource is unlocked.
+The [use pipeline](https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.precious-resource-use) simulates a very powerful virtual machine that is [locked](locks.md) and started to be used inside a build. After the stage using it has finished, the corresponding resource is unlocked.
 
-The [https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.precious-resource-stop](stop pipeline) is supposed to run periodically. It tries to lock the resource and stops it. Because of the lock, this action will never interrupt a build.
+The [stop pipeline](https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.precious-resource-stop) is supposed to run periodically. It tries to lock the resource and stops it. Because of the lock, this action will never interrupt a build.
 
 However, the more frequently you run the `stop` build, the sooner it will stop the virtual machine from spending your money. I usually retain only a limited subset (the last 100) builds from the `stop` pipeline to let it run every few minutes.
 
