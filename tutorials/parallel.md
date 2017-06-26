@@ -7,7 +7,7 @@ Run
 ./jenkins-cli.sh create-job parallel < jobs/parallel.xml
 ```
 
-If you take a look at the [https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.parallel](pipeline definition), you'll see that the stage `Parallel heavy work` defines three actions, taking 10, 20 or 30 seconds.
+If you take a look at the [pipeline definition](https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.parallel), you'll see that the stage `Parallel heavy work` defines three actions, taking 10, 20 or 30 seconds.
 
 The parallel step runs these three closures in parallel threads, giving a name to each. 
 
