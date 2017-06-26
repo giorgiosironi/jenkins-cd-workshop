@@ -17,8 +17,7 @@
       <configVersion>2</configVersion>
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
-          <url>git@github.com:jenkins-cd-workshop/advanced-pipelines</url>
-          <credentialsId>github-token</credentialsId>
+          <url>https://github.com/jenkins-cd-workshop/advanced-pipelines</url>
         </hudson.plugins.git.UserRemoteConfig>
       </userRemoteConfigs>
       <branches>
