@@ -11,7 +11,7 @@ If you take a look at the [pipeline definition](https://github.com/jenkins-cd-wo
 
 The parallel step runs these three closures in parallel threads, giving a name to each. 
 
-At http://localhost:8080/job/parallel/ you can start a new build. Looking at the output at http://localhost:8080/job/parallel/1/consoleFull you should see:
+At http://localhost:8080/job/parallel/ you can start a new build. Looking at the console output at http://localhost:8080/job/parallel/1/console you should see:
 
 ```
 17:03:44 [a] [parallel] Running shell script
