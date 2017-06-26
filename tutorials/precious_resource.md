@@ -8,7 +8,7 @@ Run
 ./jenkins-cli.sh create-job precious-resource-stop < jobs/precious-resource-stop.xml
 ```
 
-The [use pipeline](https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.precious-resource-use) simulates a very powerful virtual machine that is [locks.md](locked) and started to be used inside a build. After the stage using it has finished, the corresponding resource is unlocked.
+The [use pipeline](https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.precious-resource-use) simulates a very powerful virtual machine that is [locked](locks.md) and started to be used inside a build. After the stage using it has finished, the corresponding resource is unlocked.
 
 The [stop pipeline](https://github.com/jenkins-cd-workshop/advanced-pipelines/blob/master/Jenkinsfile.precious-resource-stop) is supposed to run periodically. It tries to lock the resource and stops it. Because of the lock, this action will never interrupt a build.
 
